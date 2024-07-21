@@ -1,0 +1,338 @@
+{
+	"id": "1442c4b9-4133-4e69-ba97-965d7336c36b",
+	"name": "Framework Spring",
+	"timestamp": "2024-07-21T13:00:59.439Z",
+	"collection_id": "33653539-1e3708ee-2b6a-4d7b-ba4c-2b70f907eb0d",
+	"folder_id": "33653539-0c7b9250-8269-4d6a-b3ae-4f0e7972c143",
+	"environment_id": "0",
+	"totalPass": 10,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-07-21T13:00:57.904Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "891957b4-f3c4-40ad-888a-0ece5dc028c6",
+			"name": "getting a project by id_1",
+			"url": "http://localhost:8080/projects/1",
+			"time": 44,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				44
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "55ddad4c-bd37-4731-b348-dd183788b408",
+			"name": "getting a project by id_6",
+			"url": "http://localhost:8080/projects/6",
+			"time": 3,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			]
+		},
+		{
+			"id": "85a493ff-2fdb-4e29-ba96-bca7ad146c1d",
+			"name": "getting all projects",
+			"url": "http://localhost:8080/projects",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "976b573a-2fdb-4da2-94d9-1477cec3e173",
+			"name": "creating a new project with id_6",
+			"url": "http://localhost:8080/projects",
+			"time": 30,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				30
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "a62ddd33-4aed-4b72-956d-671074af0c1a",
+			"name": "deleting a project by id_6",
+			"url": "http://localhost:8080/projects/6",
+			"time": 4,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		},
+		{
+			"id": "735721b4-2b44-4c61-b058-a89d26ac20f1",
+			"name": "obtaining a work time record by id_2",
+			"url": "http://localhost:8080/timesheets/2",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "735baf12-d9bb-4a9e-959d-20610779f572",
+			"name": "obtaining a work time record by id_999",
+			"url": "http://localhost:8080/timesheets/999",
+			"time": 4,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": false,
+				"Response status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 404": false,
+					"Response status code is 404": true
+				}
+			]
+		},
+		{
+			"id": "ef127f83-7bc0-45c3-8e94-65bff5f739ed",
+			"name": "retrieving all time and attendance records",
+			"url": "http://localhost:8080/timesheets",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "a5360a2c-4651-4e63-bede-8f7d1d5e7b1a",
+			"name": "creating a new time and attendance record id_1",
+			"url": "http://localhost:8080/timesheets",
+			"time": 6,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "39d6d7e6-4623-4500-9e6c-3e56f0372adf",
+			"name": "deleting a work time record by id_11",
+			"url": "http://localhost:8080/timesheets/11",
+			"time": 4,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 117,
+	"collection": {
+		"requests": [
+			{
+				"id": "891957b4-f3c4-40ad-888a-0ece5dc028c6",
+				"method": "GET"
+			},
+			{
+				"id": "55ddad4c-bd37-4731-b348-dd183788b408",
+				"method": "GET"
+			},
+			{
+				"id": "85a493ff-2fdb-4e29-ba96-bca7ad146c1d",
+				"method": "GET"
+			},
+			{
+				"id": "976b573a-2fdb-4da2-94d9-1477cec3e173",
+				"method": "POST"
+			},
+			{
+				"id": "a62ddd33-4aed-4b72-956d-671074af0c1a",
+				"method": "DELETE"
+			},
+			{
+				"id": "735721b4-2b44-4c61-b058-a89d26ac20f1",
+				"method": "GET"
+			},
+			{
+				"id": "735baf12-d9bb-4a9e-959d-20610779f572",
+				"method": "GET"
+			},
+			{
+				"id": "ef127f83-7bc0-45c3-8e94-65bff5f739ed",
+				"method": "GET"
+			},
+			{
+				"id": "a5360a2c-4651-4e63-bede-8f7d1d5e7b1a",
+				"method": "POST"
+			},
+			{
+				"id": "39d6d7e6-4623-4500-9e6c-3e56f0372adf",
+				"method": "DELETE"
+			}
+		]
+	}
+}
